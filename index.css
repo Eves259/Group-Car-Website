@@ -24,6 +24,7 @@ body {
 
 .footer {
     text-align: center;
+    color: white;
 }
 
 #h-two {
@@ -61,6 +62,3 @@ a:active {
     color: purple;
     text-decoration: underline solid yellow;
 }
-
-
-
