@@ -1,7 +1,7 @@
 * {box-sizing: border-box}
 body {
   font-family: font; 
-  margin:0;
+  margin: 0;
 }
 .mySlides {display: none}
 img {vertical-align: middle;}
@@ -10,11 +10,27 @@ p {
   color: white;
 }
 
+/*Gallery Container*/
+.galleryContainer {
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  border: 1px solid white;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  border: 1px solid gray;
+}
+
+.galleryText {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+  border: 1px solid gray;
 }
 
 img#height {
@@ -49,7 +65,7 @@ img#height {
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #6800EB;
+  color: white;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -66,15 +82,13 @@ img#height {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  border: 1px solid gray;
 }
 
 .active, .dot:hover {
   background-color: #717171;
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
 }
 
 body {
@@ -84,22 +98,21 @@ body {
   background-size: cover;
 }
 
-/*Navigation Bar Fanciness*/
 #navText {
   text-align: center;
   font-size: 1.6rem;
   color: white;
   text-decoration: none;
 }
+
 #navBox:hover {
-  background-color: rgb(34, 33, 33);
+  background-color: #404040;
 }
 
-/*Navigation Bar*/
 .navContainer {
   display: grid;
   flex-wrap: wrap;
-  grid-template-columns: 30% repeat(4, 10%) 30%;
+  grid-template-columns: 20% repeat(4, 15%) 20%;
   grid-template-rows: 200px 60px;
   text-align: center;
   vertical-align: middle;
