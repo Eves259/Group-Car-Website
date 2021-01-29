@@ -23,3 +23,51 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
 }
+
+function replaceText(n) {
+    if (n == 1) {
+        var str = document.getElementById("hallo").innerHTML; 
+        var res = str.replace(str, "Camaro SS");
+        document.getElementById("hallo").innerHTML = res;
+    }
+    if (n == 2) {
+        var str = document.getElementById("hallo").innerHTML; 
+        var res = str.replace(str, "Camaro LS");
+        document.getElementById("hallo").innerHTML = res;
+    }
+    if (n == 3) {
+        var str = document.getElementById("hallo").innerHTML; 
+        var res = str.replace(str, "Camaro ZL1");
+        document.getElementById("hallo").innerHTML = res;
+    }
+    if (n == 4) {
+        var str = document.getElementById("hallo").innerHTML; 
+        var res = str.replace(str, "Dodge Challenger");
+        document.getElementById("hallo").innerHTML = res;
+    }
+    if (n == 5) {
+        var str = document.getElementById("hallo").innerHTML; 
+        var res = str.replace(str, "Dodge Hellcat");
+        document.getElementById("hallo").innerHTML = res;
+    }
+    if (n == 6) {
+        var str = document.getElementById("hallo").innerHTML; 
+        var res = str.replace(str, "Dodge Demon");
+        document.getElementById("hallo").innerHTML = res;
+    }
+    if (n == 7) {
+        var str = document.getElementById("hallo").innerHTML; 
+        var res = str.replace(str, "Mustang GT");
+        document.getElementById("hallo").innerHTML = res;
+    }
+    if (n == 8) {
+        var str = document.getElementById("hallo").innerHTML; 
+        var res = str.replace(str, "Mustang Roush");
+        document.getElementById("hallo").innerHTML = res;
+    }
+    if (n == 9) {
+        var str = document.getElementById("hallo").innerHTML; 
+        var res = str.replace(str, "Mustang Shlby GT500");
+        document.getElementById("hallo").innerHTML = res;
+    }
+}
