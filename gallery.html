@@ -3,17 +3,19 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
-<title>Muscle Car Tribute</title>
+<title>Gallery Page</title>
 </head>
 <body onload="showSlides(1)">
     <script type="text/javascript" src="JS/javascript.js"></script>
 
+    <!--Banner-->
     <div class="heading">
-    <div class="heading-1"><img id="banner1" src="images/banner1.png"></div>
-    <div class="heading-2"><h1 id="h-one">Muscle Car Tribute</h1></div>
-    <div class="heading-3"><img id="banner2" src="images/banner2.png"></div>
+        <div class="heading-1"><img id="banner1" src="images/banner1.png"></div>
+        <div class="heading-2"><h1 id="h-one">Muscle Car Tribute</h1></div>
+        <div class="heading-3"><img id="banner2" src="images/banner2.png"></div>
     </div>
-
+    
+    <!--Navbar-->
     <div class="navContainer">
         <div class="navBarExtra1"></div>
         <div class="navBox1" id="navBox"><a href="index.html" id="navText">Home</a></div>
@@ -23,8 +25,11 @@
         <div class="navBarExtra2"></div>
     </div><br><br>
 
+    <!--Div Container for everything in the slide show-->
     <div class="textGalleryContainer">
+        <!--Div Container for the pictures and dots-->
         <div class="galleryContainer">
+            <!--Div Container for the images-->
             <div class="slideshow-container">
                 <div class="mySlides">
                     <div class="numbertext">1 / 9</div>
@@ -71,10 +76,12 @@
                     <img id="height" src="Images/Mustang Shelby GT500.jpg" style="width:100%">
                 </div>
 
+                <!--Next and previous arrows on the picture-->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
                 <br>
+
+                <!--The actual dots under the image-->
                 <div style="text-align:center">
                     <span class="dot" onclick="currentSlide(1)"></span> 
                     <span class="dot" onclick="currentSlide(2)"></span> 
@@ -87,23 +94,38 @@
                     <span class="dot" onclick="currentSlide(9)"></span> 
                 </div>
             </div>
-            <br>
         </div>
 
+        <!--The text that can be replaced in JS-->
         <div class="slideShowText">
-            <p id="slideShowText">Camaro SS</p>
-        </div>
-    </div>
+            <p id="slideShowText">
+                <p id="slideTitle">Camaro SS</p>
+                <p id="slideContent">
+                    Specs: 455 HP / 455 Pound-Feet<br>
+                    Price: $25,000<br><br>
 
-    <p id="slideShowText">Camaro SS</p>
-    <button onclick="replaceText(1)">1</button>
-    <button onclick="replaceText(2)">2</button>
-    <button onclick="replaceText(3)">3</button>
-    <button onclick="replaceText(4)">4</button>
-    <button onclick="replaceText(5)">5</button>
-    <button onclick="replaceText(6)">6</button>
-    <button onclick="replaceText(7)">7</button>
-    <button onclick="replaceText(8)">8</button>
-    <button onclick="replaceText(9)">9</button>
+                    The star of the Chevrolet performance lineup, the 6.2L LT1 V8 with the capability of 455 horsepower and 455 lb.-ft. of torque, will accelerate the 8-speed automatic Camaro SS from 0 to 60 in 4.0 seconds flat. With Direct Injection, Variable Valve Timing and, on the 8-speed automatic, Active Fuel ManagementTM, it offers efficiency when you want it, power when you need it.
+                </p>
+            </p>
+        </div>
+
+    <!--The Footer-->
+    </div>
+        <h1 id="h-two">Have questions about these cars? Contact us here:</h1>
+        <p id="p-1">Phone Number: 555-909-0209</p>
+        <p id="p-1">Email: Musclecar-tribute@gmail.com</p>
+        <h3 id="h3-one">Citation(s):</h3>
+
+        <div class="footer">
+        <div class="f1"<p id="p-3">-<a id="a1" href="https://www.youtube.com/watch?v=B7-07gzPo2c" target="_blank">2020 Chevrolet Camaro</a></p></div>
+        <div class="f2"<p id="p-3">-<a id="a1" href="https://www.automobilemag.com/news/ford-mustang-history-generations-models-specifications/" target="_blank">Ford Mustang History</a></p></div>
+        <div class="f3"<p id="p-3">-<a id="a1" href="https://www.carcovers.com/resources/the-history-of-dodge-challenger/" target="_blank">Dodge Challenger History</a></p></div>
+        <div class="f4"<p id="p-3">-<a id="a1" href="https://www.caranddriver.com/features/g15382545/chevrolet-camaro-generations-body-styles/?slide=45" target="_blank">Camaro History</a></p></div>
+        <div class="f5"<p id="p-3">-<a id="a1" href="https://www.equipmentworld.com/equipment/article/14952248/trace-the-100-year-evolution-of-chevrolets-bowtie-logo-and-the-vehicles-it-has-adorned-gallery" target="_blank">Chevy Logo</a></p></div>
+        <div class="f6"<p id="p-3">-<a id="a1" href="https://en.wikipedia.org/wiki/Chevrolet" target="_blank">Chevy History</a></p></div>
+        <div class="f7" <p id="p-3">-<a id="a1" href="https://en.wikipedia.org/wiki/Dodge" target="_blank">Dodge History</a></p></div>
+        <div class="f8"<p id="p-3">-<a id="a1" href="https://inkbotdesign.com/ford-logo-design/" target="_blank">Dodge Logo</a></p></div>
+        <div class="f9"<p id="p-3"></p>-<a id="a1" href="https://www.freep.com/story/money/cars/mark-phelan/2019/09/23/ford-mustang-henry-ford-museum-harry-phillips/2378595001/" target="_blank">First Ford Mustang</a></div>
+    </div>
 </body>
 </html> 
